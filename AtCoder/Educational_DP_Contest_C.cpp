@@ -1,4 +1,6 @@
 /*
+  章末問題5.1
+
   N 日間の夏休みです．i 日目には，
 
     A: 海で泳ぐ．幸福度 a_i を加算
@@ -27,10 +29,10 @@ int main(void)
 {
   int N;
 
-  std::cout << "夏休みの日数 N を入力" << std::endl;
+  // 夏休みの日数
   std::cin >> N;
 
-  std::cout << "その日の幸福度（A，B，C）を" << N << "日分入力" << std::endl;
+  // その日の幸福度（A，B，C）を N 日分入力
   std::vector<std::vector<long long> > a(std::pow(10, 5), std::vector<long long>(3, 0));
   for (int i = 0; i < N; i++) for (int j = 0; j < 3; j++) std::cin >> a[i][j];
 
