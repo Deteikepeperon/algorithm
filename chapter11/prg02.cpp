@@ -43,7 +43,6 @@ int main()
   std::cout << "辺数 M を入力" << std::endl;
   std::cin >> M;
 
-  // Union-Findを要素数 N で初期化
   UnionFind uf(N);
 
   std::cout << "各辺 e = (u, v) を" << M << "回入力" << std::endl;
